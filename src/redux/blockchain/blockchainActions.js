@@ -45,11 +45,11 @@ export const connect = () => {
                 const networkId = await ethereum.request({
                     method: "net_version",
                 });
-                // rinkeby: 0xC5841242035A0Fb2C008aF41775720B5DF159211
+                // rinkeby: 0x201BD073a60D411344632aE634690bf779E4d3B4
                 if (networkId == 4) {
                     const SmartContractObj = new Web3EthContract(
                         NFTContract,
-                        "0xC5841242035A0Fb2C008aF41775720B5DF159211"
+                        "0x201BD073a60D411344632aE634690bf779E4d3B4"
                     );
                     dispatch(
                         connectSucces({
